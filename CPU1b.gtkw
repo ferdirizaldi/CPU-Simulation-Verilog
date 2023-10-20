@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Fri May 26 07:34:05 2023
+[*]
+[dumpfile] "/Users/ferdirangkuti/Documents/TUT/前期１/情報知能工学実験/CPU1/CPU1.vcd"
+[dumpfile_mtime] "Fri May 26 07:31:20 2023"
+[dumpfile_size] 3333
+[savefile] "/Users/ferdirangkuti/Documents/TUT/前期１/情報知能工学実験/CPU1/CPU1b.gtkw"
+[timestart] 0
+[size] 1470 816
+[pos] -1 -1
+*-22.154539 8330000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] CPU1_tp.
+[treeopen] CPU1_tp.CPU1.
+[sst_width] 193
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 242
+@200
+-Test Bench
+@22
+CPU1_tp.INST[15:0]
+@28
+CPU1_tp.ck
+@200
+-CPU1
+@28
+CPU1_tp.res
+CPU1_tp.CPU1.ck
+@22
+CPU1_tp.CPU1.INST[15:0]
+@c00022
+CPU1_tp.CPU1.cpu_state[2:0]
+@28
+(0)CPU1_tp.CPU1.cpu_state[2:0]
+(1)CPU1_tp.CPU1.cpu_state[2:0]
+(2)CPU1_tp.CPU1.cpu_state[2:0]
+@1401202
+-group_end
+@22
+CPU1_tp.CPU1.op[3:0]
+CPU1_tp.CPU1.rbus[15:0]
+@29
+CPU1_tp.CPU1.reg_oin
+@24
+CPU1_tp.CPU1.lsel[2:0]
+CPU1_tp.CPU1.osel[2:0]
+@22
+CPU1_tp.CPU1.lbus[15:0]
+CPU1_tp.CPU1.obus[15:0]
+@28
+CPU1_tp.CPU1.lout
+CPU1_tp.CPU1.res
+CPU1_tp.CPU1.rout
+CPU1_tp.CPU1.rsel[2:0]
+@22
+CPU1_tp.CPU1.register.r1[15:0]
+CPU1_tp.CPU1.register.r2[15:0]
+CPU1_tp.CPU1.register.r3[15:0]
+@28
+CPU1_tp.CPU1.dec_oin
+[pattern_trace] 1
+[pattern_trace] 0

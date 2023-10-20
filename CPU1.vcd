@@ -1,0 +1,334 @@
+$date
+	Fri May 26 16:34:14 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module CPU1_tp $end
+$var reg 16 ! INST [15:0] $end
+$var reg 1 " ck $end
+$var reg 1 # res $end
+$scope module CPU1 $end
+$var wire 16 $ INST [15:0] $end
+$var wire 1 " ck $end
+$var wire 16 % rbus [15:0] $end
+$var wire 1 # res $end
+$var wire 3 & rsel [2:0] $end
+$var wire 1 ' rout $end
+$var wire 1 ( reg_oin $end
+$var wire 3 ) osel [2:0] $end
+$var wire 4 * op [3:0] $end
+$var wire 16 + obus [15:0] $end
+$var wire 3 , lsel [2:0] $end
+$var wire 1 - lout $end
+$var wire 16 . lbus [15:0] $end
+$var wire 1 / dec_oin $end
+$var reg 3 0 cpu_state [2:0] $end
+$scope module ALU $end
+$var wire 16 1 R [15:0] $end
+$var wire 1 " ck $end
+$var wire 1 # res $end
+$var wire 4 2 OP [3:0] $end
+$var wire 16 3 L [15:0] $end
+$var reg 16 4 O [15:0] $end
+$upscope $end
+$scope module decoder $end
+$var wire 16 5 INST [15:0] $end
+$var wire 1 " ck $end
+$var wire 1 # res $end
+$var reg 1 - LOUT $end
+$var reg 3 6 LSEL [2:0] $end
+$var reg 1 / OIN $end
+$var reg 4 7 OP [3:0] $end
+$var reg 3 8 OSEL [2:0] $end
+$var reg 16 9 R [15:0] $end
+$var reg 1 ' ROUT $end
+$var reg 3 : RSEL [2:0] $end
+$upscope $end
+$scope module register $end
+$var wire 1 - LOUT $end
+$var wire 3 ; LSEL [2:0] $end
+$var wire 16 < O [15:0] $end
+$var wire 1 ( OIN $end
+$var wire 3 = OSEL [2:0] $end
+$var wire 1 ' ROUT $end
+$var wire 3 > RSEL [2:0] $end
+$var wire 1 " ck $end
+$var wire 1 # res $end
+$var reg 16 ? L [15:0] $end
+$var reg 16 @ R [15:0] $end
+$var reg 16 A r0 [15:0] $end
+$var reg 16 B r1 [15:0] $end
+$var reg 16 C r2 [15:0] $end
+$var reg 16 D r3 [15:0] $end
+$var reg 16 E r4 [15:0] $end
+$var reg 16 F r5 [15:0] $end
+$var reg 16 G r6 [15:0] $end
+$var reg 16 H r7 [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+bz @
+bz ?
+b0 >
+b0 =
+bz <
+b0 ;
+b0 :
+bz 9
+b0 8
+b0 7
+b0 6
+bx 5
+bz 4
+bz 3
+b0 2
+bz 1
+b0 0
+0/
+bz .
+0-
+b0 ,
+bz +
+b0 *
+b0 )
+0(
+0'
+b0 &
+bz %
+bx $
+1#
+0"
+bx !
+$end
+#500000
+1"
+#1000000
+0"
+#1500000
+1"
+#2000000
+0"
+#2500000
+1"
+#3000000
+0"
+#3500000
+1"
+#4000000
+0"
+#4500000
+1"
+#5000000
+0"
+b110001000000101 !
+b110001000000101 $
+b110001000000101 5
+0#
+#5500000
+b101 %
+b101 1
+b101 9
+1/
+b1 )
+b1 8
+b1 =
+b110 *
+b110 2
+b110 7
+b1 0
+1"
+#6000000
+0"
+#6500000
+b10 0
+b101 +
+b101 4
+b101 <
+1"
+#7000000
+0"
+#7500000
+b11 0
+1"
+#8000000
+0"
+#8500000
+1(
+b100 0
+1"
+#9000000
+0"
+#9500000
+0(
+b101 B
+b0 0
+1"
+#10000000
+0"
+b110010000000011 !
+b110010000000011 $
+b110010000000011 5
+#10500000
+b1 0
+b11 %
+b11 1
+b11 9
+b10 )
+b10 8
+b10 =
+1"
+#11000000
+0"
+#11500000
+b11 +
+b11 4
+b11 <
+b10 0
+1"
+#12000000
+0"
+#12500000
+b11 0
+1"
+#13000000
+0"
+#13500000
+1(
+b100 0
+1"
+#14000000
+0"
+#14500000
+0(
+b0 0
+b11 C
+1"
+#15000000
+0"
+b1011001010000 !
+b1011001010000 $
+b1011001010000 5
+#15500000
+bz %
+bz 1
+bz 9
+b11 )
+b11 8
+b11 =
+1'
+b10 &
+b10 :
+b10 >
+1-
+b1 ,
+b1 6
+b1 ;
+b1 *
+b1 2
+b1 7
+b1 0
+1"
+#16000000
+0"
+#16500000
+b10 0
+bx +
+bx 4
+bx <
+b11 %
+b11 1
+b11 @
+b101 .
+b101 3
+b101 ?
+1"
+#17000000
+0"
+#17500000
+b1000 +
+b1000 4
+b1000 <
+b11 0
+1"
+#18000000
+0"
+#18500000
+1(
+b100 0
+1"
+#19000000
+0"
+#19500000
+0(
+b1000 D
+b0 0
+1"
+#20000000
+0"
+b10011011001000 !
+b10011011001000 $
+b10011011001000 5
+#20500000
+b1 0
+b1 &
+b1 :
+b1 >
+b11 ,
+b11 6
+b11 ;
+b10 *
+b10 2
+b10 7
+1"
+#21000000
+0"
+#21500000
+b101 %
+b101 1
+b101 @
+b1000 .
+b1000 3
+b1000 ?
+b10 +
+b10 4
+b10 <
+b10 0
+1"
+#22000000
+0"
+#22500000
+b11 0
+b11 +
+b11 4
+b11 <
+1"
+#23000000
+0"
+#23500000
+1(
+b100 0
+1"
+#24000000
+0"
+#24500000
+0(
+b0 0
+b11 D
+1"
+#25000000
+0"
